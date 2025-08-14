@@ -1,0 +1,66 @@
+<!--
+  Happy 26th Birthday Web Card 🎉
+  -------------------------------------------------
+  How to use:
+  1) Copy this code into a file named: happy_26th_birthday.html
+  2) Open it in any browser.
+  3) Share it with Mohammed Sohail as a sweet surprise.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy 26th Birthday, Mohammed Sohail! 💖</title>
+  <style>
+    :root {
+      --bg1: #0f1020;
+      --bg2: #1b1d38;
+      --text: #f7f7fb;
+      --muted: #cdd1ff;
+      --accent: #ff6ec7;
+      --accent2: #7cf7ff;
+      --ring: rgba(255, 110, 199, 0.35);
+    }
+    body {
+      margin: 0; height: 100%;
+      font-family: system-ui, sans-serif;
+      color: var(--text);
+      background: radial-gradient(1200px 600px at 20% 10%, #1e2150 0%, transparent 60%),
+                  radial-gradient(900px 600px at 80% 0%, #41206e 0%, transparent 55%),
+                  linear-gradient(180deg, var(--bg1), var(--bg2));
+      overflow: hidden;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .card {
+      padding: 28px; border-radius: 24px; max-width: 700px; text-align: center;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      backdrop-filter: blur(6px);
+      animation: fadeUp .9s ease both;
+    }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(18px);} to { opacity: 1; transform: translateY(0);} }
+    h1 { margin: 16px 0 10px; font-size: clamp(28px, 6vw, 44px); }
+    .age { background: rgba(255,110,199,0.12); border: 1px dashed rgba(255,110,199,0.55); padding: 4px 12px; border-radius: 999px; color: #ffd8f1; }
+    .note { color: var(--muted); font-size: 18px; margin: 12px 0 20px; }
+    button {
+      cursor: pointer; border: 0; border-radius: 14px; padding: 12px 16px; font-weight: 700; margin: 5px;
+      background: linear-gradient(180deg, #7cf7ff, #53d2db); color: #0f1320;
+    }
+    button.secondary { background: linear-gradient(180deg, #ffb0e4, #ff6ec7); color: #1a0f1a; }
+    .quote { margin-top: 12px; font-style: italic; color: #f7f7fb; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div>🎉 Happy Birthday 🎉</div>
+    <h1>Happy 26th Birthday, Mohammed Sohail! <span class="age">26</span></h1>
+    <p class="note">Wishing you a year full of joy, health, and dreams coming true. <strong>I love you no matter what.</strong> 💞</p>
+    <div>
+      <button onclick="alert('🎊 Happy Birthday Mohammed Sohail! 🎊')">Throw Confetti 🎊</button>
+      <button class="secondary" onclick="alert('💖 I love you no matter what, Mohammed Sohail 💖')">Play Birthday Wish ✨</button>
+    </div>
+    <div class="quote">“In case you ever foolishly forget: I am never not loving you.”</div>
+  </div>
+</body>
+</html>
